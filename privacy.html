@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy e cookie | Start Up Cafè Bergamo</title>
+    <meta name="description" content="Informativa privacy e cookie del sito di Start Up Cafè, Via San Bernardino 67/a, Bergamo.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#822621">
+    <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/icons.js" defer></script>
+    <script src="/assets/js/site.js" defer></script>
+</head>
+
+<body class="pb-14 md:pb-0 text-pretty font-sans text-gray-900 bg-stone-50 selection:bg-[#822621] selection:text-white overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed w-full z-50 bg-white shadow-sm h-20 transition-all duration-500 ease-in-out">
+        <div class="container mx-auto px-6 h-full flex justify-end items-center relative">
+
+            <!-- Centered Linked Title -->
+            <a href="/"
+                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-opensauce font-black tracking-[-0.03em] uppercase text-3xl text-stone-900 hover:text-[#822621] transition-colors whitespace-nowrap">
+                Start Up Cafè
+            </a>
+
+            <!-- Burger Menu Button (Visible Always) -->
+            <div class="flex items-center">
+                <button type="button" class="text-stone-900 hover:text-[#822621] transition-colors p-3 -mr-3" onclick="toggleMenu()" aria-label="Apri il menu di navigazione" aria-expanded="false" aria-controls="mobile-menu">
+                    <i id="icon-menu" data-lucide="menu" width="28" height="28"></i>
+                    <i id="icon-close" data-lucide="x" width="28" height="28" class="hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 py-8 px-6 flex-col items-center space-y-6 shadow-xl z-40">
+            <a href="/Menu" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]" onclick="toggleMenu()">Menù</a>
+            <a href="/Cosa-fare-a-bergamo" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]" onclick="toggleMenu()">Eventi</a>
+            <a href="#footer-contacts" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]" onclick="toggleMenu()">Prenotazione</a>
+            <a href="/About" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]" onclick="toggleMenu()">Chi Siamo</a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-16 md:pt-40 md:pb-24 bg-white px-6">
+        <div class="container mx-auto max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-8">Privacy e cookie</h1>
+            <!-- TODO: testo da completare e far verificare (consulente o servizio tipo iubenda) con i dati reali del titolare. -->
+            <div class="space-y-6 text-stone-700 leading-normal">
+                <h2 class="text-2xl font-bold text-stone-900">Titolare del trattamento</h2>
+                <p>Start Up Cafè, Via San Bernardino 67/a, 24122 Bergamo (BG). Telefono <a href="tel:+393474243702" class="text-[#822621] underline">+39 347 424 3702</a>.</p>
+                <!-- TODO: ragione sociale, partita IVA ed email di contatto per la privacy -->
+
+                <h2 class="text-2xl font-bold text-stone-900">Cookie e servizi di terze parti</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Preferenza sul consenso</strong> (tecnico): salviamo nel tuo browser la scelta fatta nel banner. Non serve consenso.</li>
+                    <li><strong>Google Analytics 4</strong> (statistiche): si attiva solo se clicchi "Accetta" nel banner. Ci dice quante persone visitano il sito e quali pagine leggono.</li>
+                    <li><strong>Google Maps</strong>: la mappa incorporata è fornita da Google, che può impostare propri cookie quando la mappa viene caricata.</li>
+                </ul>
+                <p>Puoi cambiare idea quando vuoi:
+                    <button type="button" onclick="openCookieSettings()" class="text-[#822621] underline font-bold">modifica le preferenze sui cookie</button>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- TODO: link "Indicazioni" generico verso Google Maps: sostituirlo con il link diretto alla scheda se preferisci.
+         TODO: numero WhatsApp uguale al telefono, da confermare.
+         TODO: orari presi da Google Business Profile, da confermare (il vecchio sito diceva lun-ven 7:00-20:00). -->
+    <footer id="footer-contacts"
+        class="bg-stone-950 text-stone-400 py-10 md:py-16 border-t border-stone-900 scroll-mt-20 relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-12 mb-10 md:mb-16">
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-6 text-white">
+                        <span class="font-bold text-2xl tracking-widest">START UP CAFÈ</span>
+                    </div>
+                    <p class="text-stone-400 leading-normal mb-6">
+                        Il bar di quartiere a Bergamo, tra università e biblioteca: siamo di fronte alla Biblioteca Tiraboschi.
+                        Vieni a trovarci per un caffè, una partita a scacchi o un aperitivo in compagnia.
+                    </p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="https://www.instagram.com/startupcafe.bergamo/" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/instagram-svgrepo-com.svg" alt="Instagram di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                        <a href="https://www.facebook.com/barstartupcaffe" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/facebook-svgrepo-com.svg" alt="Facebook di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <h2 class="text-white font-bold uppercase tracking-widest mb-6 text-sm">Contatti & Orari</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="map-pin" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Via San Bernardino 67/a</p>
+                                <p class="text-sm">24122 Bergamo (BG)</p>
+                                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni" class="inline-block py-2 text-sm text-white underline hover:text-stone-300">Indicazioni stradali</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="phone" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <a href="tel:+393474243702" data-track="click_chiama" class="inline-block py-2 text-white font-medium hover:text-stone-300">+39 347 424 3702</a>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4 mb-8">
+                            <i data-lucide="clock" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Orari di apertura</p>
+                                <p class="text-sm">Lun, mar, gio, ven: 7:00 - 20:30</p>
+                                <p class="text-sm">Mercoledì: 7:00 - 22:30</p>
+                                <p class="text-sm">Sabato: 7:00 - 14:00</p>
+                                <p class="text-sm">Domenica: chiuso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 bg-stone-900 p-8 rounded-2xl text-center md:text-left">
+                    <h2 class="text-white font-bold text-xl mb-4">Prenota il tuo tavolo</h2>
+                    <p class="text-stone-400 text-sm mb-6">
+                        Vuoi organizzare una serata giochi o assicurarti un posto per studiare?
+                    </p>
+                    <div class="space-y-3">
+                        <a href="tel:+393474243702" data-track="click_chiama"
+                            class="w-full bg-[#822621] text-white py-4 rounded-xl font-bold hover:bg-[#822621]/90 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="phone" width="20" height="20"></i>
+                            Chiama ora :)
+                        </a>
+                        <a href="https://wa.me/393474243702?text=Ciao%20Start%20Up%20Caf%C3%A8%21%20Vorrei%20prenotare%20un%20tavolo%20per%20...%20persone%2C%20il%20giorno%20...%20alle%20ore%20..." target="_blank" rel="noopener noreferrer" data-track="click_whatsapp"
+                            class="w-full bg-white text-stone-900 py-4 rounded-xl font-bold hover:bg-stone-200 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" width="20" height="20"></i>
+                            Prenota su WhatsApp
+                        </a>
+                    </div>
+                    <a href="https://g.page/r/CekCdO--ntmGEBM/review" target="_blank" rel="noopener noreferrer" data-track="click_recensione"
+                        class="inline-flex items-center gap-2 py-2 text-sm text-white underline hover:text-stone-300 mt-4">
+                        <i data-lucide="star" width="16" height="16"></i>
+                        Lascia una recensione su Google
+                    </a>
+                </div>
+
+            </div>
+
+            <nav aria-label="Pagine del sito" class="pb-8 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-0 text-sm">
+                <a href="/Menu" class="inline-block py-2 hover:text-white transition-colors">Menu: colazioni, pranzi e drink</a>
+                <a href="/Cosa-fare-a-bergamo" class="inline-block py-2 hover:text-white transition-colors">Eventi e Spritz Party</a>
+                <a href="/smart-working-bergamo" class="inline-block py-2 hover:text-white transition-colors">Studiare e lavorare a Bergamo</a>
+                <a href="/About" class="inline-block py-2 hover:text-white transition-colors">Chi siamo</a>
+            </nav>
+
+            <div
+                class="pt-8 border-t border-stone-900 text-center flex flex-col md:flex-row justify-between items-center text-xs text-stone-400">
+                <p>© 2026 Start Up Cafè · Bergamo</p>
+                <div class="flex gap-6 mt-2 md:mt-0">
+                    <a href="/privacy" class="inline-block py-3 hover:text-white transition-colors">Privacy</a>
+                    <button type="button" onclick="openCookieSettings()" class="inline-block py-3 hover:text-white transition-colors">Cookie</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra fissa su mobile: Chiama e Indicazioni -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 bg-white border-t border-stone-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <a href="tel:+393474243702" data-track="click_chiama"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-white bg-[#822621]">
+            <i data-lucide="phone" width="20" height="20"></i>
+            Chiama
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-stone-900">
+            <i data-lucide="navigation" width="20" height="20"></i>
+            Indicazioni
+        </a>
+    </div>
+
+    <script>
+
+        // Mobile Menu Toggle logic
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            document.querySelector('[aria-controls=\"mobile-menu\"]').setAttribute('aria-expanded', isMenuOpen);
+            const iconMenu = document.getElementById('icon-menu');
+            const iconClose = document.getElementById('icon-close');
+            
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                if (iconMenu) iconMenu.classList.add('hidden');
+                if (iconClose) iconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                if (iconMenu) iconMenu.classList.remove('hidden');
+                if (iconClose) iconClose.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>

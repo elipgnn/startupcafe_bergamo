@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Colazioni, Pranzi e Cocktail | Start Up Cafè Bergamo</title>
+    <meta name="description" content="Il menu di Start Up Cafè a Bergamo: caffè e brioche, pranzi veloci, taglieri anche vegani, Spritz e cocktail. Ti aspettiamo davanti alla Tiraboschi.">
+    <link rel="canonical" href="https://startupcafebergamo.it/Menu">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Start Up Cafè">
+    <meta property="og:title" content="Menu | Colazioni, Pranzi e Cocktail | Start Up Cafè Bergamo">
+    <meta property="og:description" content="Il menu di Start Up Cafè a Bergamo: caffè e brioche, pranzi veloci, taglieri anche vegani, Spritz e cocktail. Ti aspettiamo davanti alla Tiraboschi.">
+    <meta property="og:url" content="https://startupcafebergamo.it/Menu">
+    <meta property="og:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Il bancone di Start Up Cafè a Bergamo con il logo del locale">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Menu | Colazioni, Pranzi e Cocktail | Start Up Cafè Bergamo">
+    <meta name="twitter:description" content="Il menu di Start Up Cafè a Bergamo: caffè e brioche, pranzi veloci, taglieri anche vegani, Spritz e cocktail. Ti aspettiamo davanti alla Tiraboschi.">
+    <meta name="twitter:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <meta property="og:title" content="Menu | Colazioni, Pranzi e Cocktail | Start Up Cafè Bergamo">
+    <meta property="og:description" content="Il menu di Start Up Cafè a Bergamo: caffè e brioche, pranzi veloci, taglieri anche vegani, Spritz e cocktail. Ti aspettiamo davanti alla Tiraboschi.">
+    <meta property="og:url" content="https://startupcafebergamo.it/Menu">
+    <meta property="og:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Il bancone di Start Up Cafè a Bergamo con il logo del locale">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Menu | Colazioni, Pranzi e Cocktail | Start Up Cafè Bergamo">
+    <meta name="twitter:description" content="Il menu di Start Up Cafè a Bergamo: caffè e brioche, pranzi veloci, taglieri anche vegani, Spritz e cocktail. Ti aspettiamo davanti alla Tiraboschi.">
+    <meta name="twitter:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#822621">
+    <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/icons.js" defer></script>
+    <script src="/assets/js/site.js" defer></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start Up Cafè",
+      "item": "https://startupcafebergamo.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Menu",
+      "item": "https://startupcafebergamo.it/Menu"
+    }
+  ]
+}
+    </script>
+</head>
+
+<body class="pb-14 md:pb-0 text-pretty font-sans text-gray-900 bg-stone-50 selection:bg-[#822621] selection:text-white overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed w-full z-50 bg-white shadow-sm h-20 transition-all duration-500 ease-in-out">
+        <div class="container mx-auto px-6 h-full flex justify-end items-center relative">
+
+            <!-- Centered Linked Title -->
+            <a href="/"
+                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-opensauce font-black tracking-[-0.03em] uppercase text-3xl text-stone-900 hover:text-[#822621] transition-colors whitespace-nowrap">
+                Start Up Cafè
+            </a>
+
+            <!-- Burger Menu Button (Visible Always) -->
+            <div class="flex items-center">
+                <button type="button" class="text-stone-900 hover:text-[#822621] transition-colors p-3 -mr-3" onclick="toggleMenu()" aria-label="Apri il menu di navigazione" aria-expanded="false" aria-controls="mobile-menu">
+                    <i id="icon-menu" data-lucide="menu" width="28" height="28"></i>
+                    <i id="icon-close" data-lucide="x" width="28" height="28" class="hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile/Full Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 py-8 px-6 flex-col items-center space-y-6 shadow-xl z-40">
+            <a href="/Menu" class="text-2xl font-bold uppercase tracking-widest text-[#822621]"
+                onclick="toggleMenu()">Menù</a>
+            <a href="/Cosa-fare-a-bergamo" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Eventi</a>
+            <a href="#footer-contacts"
+                class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Prenotazione</a>
+            <a href="/About" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Chi Siamo</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-8 md:pt-32 md:pb-16 bg-white text-center px-6">
+        <span class="text-[#822621] font-bold uppercase tracking-widest mb-4 block text-lg">Gusto e passione</span>
+        <h1 class="text-4xl md:text-6xl font-bold text-stone-900 mb-4">
+            Menù
+            <span class="block text-2xl md:text-3xl text-stone-600 mt-3">Colazioni, pranzi e aperitivi a Bergamo</span>
+        </h1>
+    </header>
+
+    <!-- Main Menu Section -->
+    <section class="py-12 md:py-16 bg-stone-50 min-h-screen">
+        <div class="container mx-auto px-6 max-w-5xl">
+
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8 md:mb-16 relative z-20">
+                <button onclick="switchTab('caffetteria')" id="tab-caffetteria"
+                    class="tab-btn px-8 py-3 rounded-full text-sm font-bold tracking-wider transition-all duration-300 bg-black text-white shadow-lg scale-105 flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i data-lucide="coffee" width="18" height="18"></i> CAFFETTERIA
+                </button>
+                <button onclick="switchTab('cucina')" id="tab-cucina"
+                    class="tab-btn px-8 py-3 rounded-full text-sm font-bold tracking-wider transition-all duration-300 bg-white text-gray-600 hover:bg-gray-200 flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i data-lucide="utensils" width="18" height="18"></i> CUCINA
+                </button>
+                <button onclick="switchTab('bevande')" id="tab-bevande"
+                    class="tab-btn px-8 py-3 rounded-full text-sm font-bold tracking-wider transition-all duration-300 bg-white text-gray-600 hover:bg-gray-200 flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i data-lucide="martini" width="18" height="18"></i> BEVANDE & DRINK
+                </button>
+            </div>
+
+            <!-- Caffetteria Content -->
+            <div id="content-caffetteria"
+                class="menu-content grid md:grid-cols-2 gap-x-10 gap-y-6 md:gap-y-8 duration-500">
+                <h2 class="sr-only">Caffetteria e colazioni</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,30</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè americano</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-semibold text-lg md:text-xl text-stone-800">Start Up</h3>
+                            <span class="text-sm text-stone-500 italic">latte, nutella, scaglie cioccolato</span>
+                        </div>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-semibold text-lg md:text-xl text-stone-800">Start Up plus</h3>
+                            <span class="text-sm text-stone-500 italic">latte, nutella, caffè, cioccolato</span>
+                        </div>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè "nutellino"</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè "nutellino" deca</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,70</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè deca</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè corretto</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,80</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Cappuccino</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,80</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Cappuccino Deca</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Cappuccino Soia</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Schiumetta (tazza cappuccio)
+                        </h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè shakerato</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè shakerato corretto</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Caffè shakerato deca</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,20</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Cioccolata</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Cioccolata + panna</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Latte bianco</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Latte macchiato</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">The, camomilla, tisane varie
+                        </h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Ginseng / Orzo piccolo</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,60</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Ginseng / Orzo grande</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,20</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Crema caffè</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Crema caffè grande</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Brioches</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Brioches mini</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Brioches con nutella</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,70</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Frolla</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Muffin</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Biscotto</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 0,70</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Fetta torta</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,50</span>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------drinks---------------------->
+            <div id="content-bevande"
+                class="menu-content hidden md:grid-cols-2 gap-x-10 gap-y-6 md:gap-y-8 duration-500">
+                <h2 class="sr-only">Bevande, vini e cocktail</h2>
+
+                <div class="space-y-8">
+                    <div class="border-b border-stone-200 md:border-none pb-4 md:pb-0 mb-4 md:mb-0">
+                        <div class="flex justify-between items-center cursor-pointer md:cursor-auto select-none md:select-text"
+                            onclick="toggleCategory(this)">
+                            <h3 class="font-black text-[22px] text-stone-900 mb-0 md:mb-4 flex items-center gap-2">
+                                <i data-lucide="glass-water" class="text-[#822621]" width="24" height="24"></i>
+                                ANALCOLICI</h3>
+                            <i data-lucide="chevron-down" class="md:hidden transition-transform duration-300"></i>
+                        </div>
+                        <div class="space-y-4 hidden md:block mt-4 md:mt-0">
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Bottiglia acqua 1/2
+                                    Lt.</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Acqua bicchiere
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 0,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Acqua e menta</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Spuma</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 1,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Bibite in lattina
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Spremuta</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Succo di frutta
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Red Bull</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Crodino / San
+                                    Bitter</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-stone-200 md:border-none pb-4 md:pb-0 mb-4 md:mb-0">
+                        <div class="flex justify-between items-center cursor-pointer md:cursor-auto select-none md:select-text"
+                            onclick="toggleCategory(this)">
+                            <h3 class="font-black text-[22px] text-stone-900 mb-0 md:mb-4 flex items-center gap-2">
+                                <i data-lucide="leaf" class="text-[#822621]" width="24" height="24"></i>
+                                THE E TISANE</h3>
+                            <i data-lucide="chevron-down" class="md:hidden transition-transform duration-300"></i>
+                        </div>
+                        <div class="space-y-4 hidden md:block mt-4 md:mt-0">
+
+                            <div>
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Dal Vietnam</p>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Trà Quế
+                                                / Cinnamon
+                                                Tea</h3>
+                                            <span class="text-sm text-stone-500 italic">tè nero, cannella vietnamita,
+                                                liquirizia</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">
+                                                Gingembre / Zenzero
+                                            </h3>
+                                            <span class="text-sm text-stone-500 italic">radice ed estratto di
+                                                zenzero</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Hibisco
+                                                / Hibiscus
+                                            </h3>
+                                            <span class="text-sm text-stone-500 italic">Fiori di Ibisco, Betulla</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Graine
+                                                de Lotus /
+                                                Semi di Loto</h3>
+                                            <span class="text-sm text-stone-500 italic">Passiflora, Loto, Albero
+                                                Corallo, Longan</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Ladotea
+                                                / Trà Actisô
+                                            </h3>
+                                            <span class="text-sm text-stone-500 italic">estratto morbido di
+                                                carciofo</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Dallo Sri Lanka
+                                </p>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <div class="flex flex-col">
+                                        <h3 class="font-semibold text-base md:text-lg text-stone-800">Saffron
+                                            Herbal Tea</h3>
+                                        <span class="text-sm text-stone-500 italic">tè nero del Ceylon, zafferano</span>
+                                    </div>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Dal Mondo</p>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">
+                                                Moroccan Mint</h3>
+                                            <span class="text-sm text-stone-500 italic">tè verde e menta
+                                                pakistana</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Turkish
+                                                Tea</h3>
+                                            <span class="text-sm text-stone-500 italic">100% tè nero corposo</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Dal Perù</p>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Tè
+                                                Canela y Clavo
+                                            </h3>
+                                            <span class="text-sm text-stone-500 italic">tè nero, Cannella, Chiodi di
+                                                Garofano</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Uña de
+                                                Gato</h3>
+                                            <span class="text-sm text-stone-500 italic">corteccia di Uncaria
+                                                tomentosa</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                        <div class="flex flex-col">
+                                            <h3 class="font-semibold text-base md:text-lg text-stone-800">Boldo
+                                            </h3>
+                                            <span class="text-sm text-stone-500 italic">foglie dell’albero di
+                                                Boldo</span>
+                                        </div>
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Altri Tè e
+                                    Infusi</p>
+                                <div class="pb-2">
+                                    <p class="text-sm text-stone-800 leading-normal">
+                                        Tè classico, Deteinato, Camomilla, Zenzero e Limone, Vaniglia e Lampone, Frutti
+                                        misti, Malva, Frutti rossi, Mirtillo, Ciliegia e Fragola, Garofano e Camomilla,
+                                        Finocchio.
+                                    </p>
+                                    <p class="text-sm text-stone-800 leading-normal mt-2 font-bold">
+                                        Infusi Golosi: Strudel di mele, Torta Sacher, Crème Caramel
+                                    </p>
+                                    <div class="text-right mt-1">
+                                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="border-b border-stone-200 md:border-none pb-4 md:pb-0 mb-4 md:mb-0">
+                        <div class="flex justify-between items-center cursor-pointer md:cursor-auto select-none md:select-text"
+                            onclick="toggleCategory(this)">
+                            <h3 class="font-black text-[22px] text-stone-900 mb-0 md:mb-4 flex items-center gap-2">
+                                <i data-lucide="beer" class="text-[#822621]" width="24" height="24"></i>
+                                BIRRE
+                            </h3>
+                            <i data-lucide="chevron-down" class="md:hidden transition-transform duration-300"></i>
+                        </div>
+                        <div class="space-y-4 hidden md:block mt-4 md:mt-0">
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Birra piccola spina
+                                    Lowenbrau
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Birra media spina
+                                    Lowenbrau</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Birra senza glutine
+                                    / Tennent's
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Birre 33 cl.</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Birre artigianali
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 6,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-stone-200 md:border-none pb-4 md:pb-0 mb-4 md:mb-0">
+                        <div class="flex justify-between items-center cursor-pointer md:cursor-auto select-none md:select-text"
+                            onclick="toggleCategory(this)">
+                            <h3 class="font-black text-[22px] text-stone-900 mb-0 md:mb-4 flex items-center gap-2">
+                                <i data-lucide="wine" class="text-[#822621]" width="24" height="24"></i>
+                                VINI E SPUMANTI
+                            </h3>
+                            <i data-lucide="chevron-down" class="md:hidden transition-transform duration-300"></i>
+                        </div>
+                        <div class="space-y-8 hidden md:block mt-4 md:mt-0">
+                            <!-- Bianchi -->
+                            <div class="space-y-4">
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Vini Bianchi
+                                </p>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Falanghina DOP
+                                        "La
+                                        Guardiense"</h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Lugana DOC
+                                        "Zenegaglia"</h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Custoza DOC
+                                        "Bennati"</h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                            </div>
+                            <!-- Rossi -->
+                            <div class="space-y-4">
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Vini Rossi</p>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Barbera d'Asti
+                                        DOC "Toso"
+                                    </h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Ciliegiolo DOC
+                                        "Vignaioli"
+                                    </h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Morellino di
+                                        Scansano DOCG
+                                    </h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                            </div>
+                            <!-- Spumanti -->
+                            <div class="space-y-4">
+                                <p class="font-bold text-[#822621] text-lg tracking-widest uppercase mb-2">Spumanti</p>
+                                <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Prosecco
+                                        Valdobbiadene DOCG
+                                    </h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                                <div class="flex justify-between items-baseline pb-2">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Prosecco Santa Margherita DOCG</h3>
+                                    <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="border-b border-stone-200 md:border-none pb-4 md:pb-0 mb-4 md:mb-0">
+                        <div class="flex justify-between items-center cursor-pointer md:cursor-auto select-none md:select-text"
+                            onclick="toggleCategory(this)">
+                            <h3 class="font-black text-[22px] text-stone-900 mb-0 md:mb-4 flex items-center gap-2">
+                                <i data-lucide="martini" class="text-[#822621]" width="24" height="24"></i>
+                                ALCOLICI
+                            </h3>
+                            <i data-lucide="chevron-down" class="md:hidden transition-transform duration-300"></i>
+                        </div>
+                        <div class="space-y-4 hidden md:block mt-4 md:mt-0">
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Campari soda</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Bianco sporco
+                                    </h3>
+                                    <span class="text-sm text-stone-500 italic">Aperol o Bitter Campari</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Campari soda con
+                                    bianco</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Campari soda con
+                                    bianco (1 in 2)
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 6,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Punch</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 3,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Grappa bianca</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Amari / Sambuca /
+                                    Bayles / Rhum
+                                </h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Grappa riserva</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Rhum riserva</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Whisky</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Bianchino</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-stone-200 md:border-none pb-4 md:pb-0 mb-4 md:mb-0">
+                        <div class="flex justify-between items-center cursor-pointer md:cursor-auto select-none md:select-text"
+                            onclick="toggleCategory(this)">
+                            <h3 class="font-black text-[22px] text-stone-900 mb-0 md:mb-4 flex items-center gap-2">
+                                <i data-lucide="glass-water" class="text-[#822621]" width="24" height="24"></i>
+                                DRINK
+                            </h3>
+                            <i data-lucide="chevron-down" class="md:hidden transition-transform duration-300"></i>
+                        </div>
+                        <div class="space-y-4 hidden md:block mt-4 md:mt-0">
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Negroni</h3>
+                                    <span class="text-sm text-stone-500 italic">Gin, Martini Rosso, Campari</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Negroni
+                                        Sbagliato</h3>
+                                    <span class="text-sm text-stone-500 italic">Martini Rosso, Campari, Prosecco</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Spritz</h3>
+                                    <span class="text-sm text-stone-500 italic">Prosecco, Aperol, Soda</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Mojito</h3>
+                                    <span class="text-sm text-stone-500 italic">Rum bianco, succo di lime, zucchero di canna, foglie di menta, acqua frizzante</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Gin Tonic /
+                                        Pink</h3>
+                                    <span class="text-sm text-stone-500 italic">Gin (o Gin rosa), Tonic Water</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Americano</h3>
+                                    <span class="text-sm text-stone-500 italic">Martini Rosso, Campari, Soda</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Gin / Vodka
+                                        Lemon</h3>
+                                    <span class="text-sm text-stone-500 italic">Gin o Vodka, Lemon soda</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Daiquiri</h3>
+                                    <span class="text-sm text-stone-500 italic">Rum bianco, Succo di lime,
+                                        Zucchero</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Cosmopolitan
+                                    </h3>
+                                    <span class="text-sm text-stone-500 italic">Vodka, Cointreau, Mirtillo, Lime</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Long Island
+                                    </h3>
+                                    <span class="text-sm text-stone-500 italic">Mix tosto alcolico, Cola, Limone</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Pineapple Fizz
+                                    </h3>
+                                    <span class="text-sm text-stone-500 italic">Vodka, succo d'ananas, top di
+                                        soda</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Club Energy
+                                        Drinks</h3>
+                                    <span class="text-sm text-stone-500 italic">Vodka, Gin, Rum, Tequila, Whisky,
+                                        Montenegro, Averna, Fernet, Jägerbomb</span>
+                                </div>
+                                <span class="font-bold text-[#822621] whitespace-nowrap shrink-0">€ 5,00</span>
+                            </div>
+
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <h3 class="font-semibold text-base md:text-lg text-stone-800">Shottini</h3>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 2,50</span>
+                            </div>
+                            <div class="flex justify-between items-baseline pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Con "aperitivo"
+                                    </h3>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">+ € 2,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-stone-200 md:border-none pb-4 md:pb-0 mb-4 md:mb-0">
+                        <div class="flex justify-between items-center cursor-pointer md:cursor-auto select-none md:select-text"
+                            onclick="toggleCategory(this)">
+                            <h3 class="font-black text-[22px] text-stone-900 mb-0 md:mb-4 flex items-center gap-2">
+                                <i data-lucide="cup-soda" class="text-[#822621]" width="24" height="24"></i>
+                                DRINK ANALCOLICI
+                            </h3>
+                            <i data-lucide="chevron-down" class="md:hidden transition-transform duration-300"></i>
+                        </div>
+                        <div class="space-y-4 hidden md:block mt-4 md:mt-0">
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Spritz
+                                        Analcolico</h3>
+                                    <span class="text-sm text-stone-500 italic">Succo d'arancia, Bitter, Soda</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Virgin Moscow
+                                        Mule</h3>
+                                    <span class="text-sm text-stone-500 italic">Ginger beer, Lime, Menta</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Mojito
+                                        Analcolico</h3>
+                                    <span class="text-sm text-stone-500 italic">Lemonsoda, Tonica, Zucchero,
+                                        Menta</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Shirley</h3>
+                                    <span class="text-sm text-stone-500 italic">Granatina, Ginger beer, Limone</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                            <div class="flex justify-between items-baseline pb-2">
+                                <div class="flex flex-col">
+                                    <h3 class="font-semibold text-base md:text-lg text-stone-800">Red Sunset</h3>
+                                    <span class="text-sm text-stone-500 italic">Ananas, Arancia, Pesca, Menta</span>
+                                </div>
+                                <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Cucina Content -->
+            <div id="content-cucina"
+                class="menu-content hidden md:grid-cols-2 gap-y-4 md:gap-x-10 md:gap-y-8 duration-500">
+                <h2 class="sr-only">Pranzo e aperitivo</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-semibold text-lg md:text-xl text-stone-800">Focaccia, piada, panino, tostone</h3>
+                            <span class="text-sm text-stone-500 italic mt-1 leading-snug">
+                                <strong>Scegli tra:</strong><br>
+                                • <strong>Salumi:</strong> cotto, crudo, salame, mortadella, bresaola e speck.<br>
+                                • <strong>Formaggi:</strong> mozzarella, fontina, brie e provola.<br>
+                                • <strong>Verdure e salse:</strong> insalata, pomodoro, melanzane, zucchine alla griglia, salse.
+                            </span>
+                        </div>
+                        <span class="font-bold text-[#822621] text-sm md:text-base shrink-0 ml-4 mt-1">€ 6,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Primi a menù</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 7,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Secondi a menù</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 8,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Hamburger con patatine</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 8,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Crocchette di pollo con patatine</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 8,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Patatine fritte (a porzione)</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 4,00</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-semibold text-lg md:text-xl text-stone-800">Insalatone</h3>
+                            <span class="text-sm text-stone-500 italic mt-1 leading-snug">
+                                <strong>Scegli tra:</strong> pomodoro, carote, cetrioli, carciofi, olive, tonno, acciughe, aglio, formaggi vari, mais, grana.
+                            </span>
+                        </div>
+                        <span class="font-bold text-[#822621] text-sm md:text-base shrink-0 ml-4 mt-1">€ 8,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Piatto di bresaola e grana</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 8,50</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Pizza trancio</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 5,00</span>
+                    </div>
+                    <div class="flex justify-between items-baseline border-b border-stone-200 pb-2">
+                        <h3 class="font-semibold text-lg md:text-xl text-stone-800">Tagliere</h3>
+                        <span class="font-bold text-[#822621] text-sm md:text-base">€ 9,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="py-4 bg-[#822621] overflow-hidden whitespace-nowrap relative z-20">
+        <div class="inline-block animate-marquee">
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Start Up Cafè •
+                Bergamo</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Specialty Coffee •
+                Coworking</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Healthy Brunch • Good
+                Vibes</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Start Up Cafè •
+                Bergamo</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Specialty Coffee •
+                Coworking</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Healthy Brunch • Good
+                Vibes</span>
+        </div>
+    </div>
+
+    <!-- Dove siamo: indirizzo, telefono e orari sono nel footer -->
+    <section id="dove-siamo" class="py-12 md:py-16 bg-stone-100 relative z-20 scroll-mt-20">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-8">
+                <span class="text-[#822621] font-bold uppercase tracking-widest mb-4 block text-lg">Dove siamo</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-stone-900">Davanti alla Biblioteca Tiraboschi</h2>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo"
+                    target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+                    class="inline-flex items-center gap-2 bg-[#822621] text-white px-8 py-3 rounded-full font-bold hover:bg-stone-900 shadow transition-all duration-300">
+                    <i data-lucide="navigation" width="20" height="20"></i>
+                    Indicazioni
+                </a>
+            </div>
+            <div class="h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
+                <iframe title="Mappa: Start Up Cafè in Via San Bernardino 67/a a Bergamo"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5574.364104617971!2d9.660201176207453!3d45.68731841852434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781512ba4fc5591%3A0x86d99ebeef7402e9!2sSTART%20UP%20CAF%C3%88!5e0!3m2!1sit!2sit!4v1766769627214!5m2!1sit!2sit"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- TODO: link "Indicazioni" generico verso Google Maps: sostituirlo con il link diretto alla scheda se preferisci.
+         TODO: numero WhatsApp uguale al telefono, da confermare.
+         TODO: orari presi da Google Business Profile, da confermare (il vecchio sito diceva lun-ven 7:00-20:00). -->
+    <footer id="footer-contacts"
+        class="bg-stone-950 text-stone-400 py-10 md:py-16 border-t border-stone-900 scroll-mt-20 relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-12 mb-10 md:mb-16">
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-6 text-white">
+                        <span class="font-bold text-2xl tracking-widest">START UP CAFÈ</span>
+                    </div>
+                    <p class="text-stone-400 leading-normal mb-6">
+                        Il bar di quartiere a Bergamo, tra università e biblioteca: siamo di fronte alla Biblioteca Tiraboschi.
+                        Vieni a trovarci per un caffè, una partita a scacchi o un aperitivo in compagnia.
+                    </p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="https://www.instagram.com/startupcafe.bergamo/" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/instagram-svgrepo-com.svg" alt="Instagram di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                        <a href="https://www.facebook.com/barstartupcaffe" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/facebook-svgrepo-com.svg" alt="Facebook di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <h2 class="text-white font-bold uppercase tracking-widest mb-6 text-sm">Contatti & Orari</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="map-pin" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Via San Bernardino 67/a</p>
+                                <p class="text-sm">24122 Bergamo (BG)</p>
+                                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni" class="inline-block py-2 text-sm text-white underline hover:text-stone-300">Indicazioni stradali</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="phone" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <a href="tel:+393474243702" data-track="click_chiama" class="inline-block py-2 text-white font-medium hover:text-stone-300">+39 347 424 3702</a>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4 mb-8">
+                            <i data-lucide="clock" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Orari di apertura</p>
+                                <p class="text-sm">Lun, mar, gio, ven: 7:00 - 20:30</p>
+                                <p class="text-sm">Mercoledì: 7:00 - 22:30</p>
+                                <p class="text-sm">Sabato: 7:00 - 14:00</p>
+                                <p class="text-sm">Domenica: chiuso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 bg-stone-900 p-8 rounded-2xl text-center md:text-left">
+                    <h2 class="text-white font-bold text-xl mb-4">Prenota il tuo tavolo</h2>
+                    <p class="text-stone-400 text-sm mb-6">
+                        Vuoi organizzare una serata giochi o assicurarti un posto per studiare?
+                    </p>
+                    <div class="space-y-3">
+                        <a href="tel:+393474243702" data-track="click_chiama"
+                            class="w-full bg-[#822621] text-white py-4 rounded-xl font-bold hover:bg-[#822621]/90 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="phone" width="20" height="20"></i>
+                            Chiama ora :)
+                        </a>
+                        <a href="https://wa.me/393474243702?text=Ciao%20Start%20Up%20Caf%C3%A8%21%20Vorrei%20prenotare%20un%20tavolo%20per%20...%20persone%2C%20il%20giorno%20...%20alle%20ore%20..." target="_blank" rel="noopener noreferrer" data-track="click_whatsapp"
+                            class="w-full bg-white text-stone-900 py-4 rounded-xl font-bold hover:bg-stone-200 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" width="20" height="20"></i>
+                            Prenota su WhatsApp
+                        </a>
+                    </div>
+                    <a href="https://g.page/r/CekCdO--ntmGEBM/review" target="_blank" rel="noopener noreferrer" data-track="click_recensione"
+                        class="inline-flex items-center gap-2 py-2 text-sm text-white underline hover:text-stone-300 mt-4">
+                        <i data-lucide="star" width="16" height="16"></i>
+                        Lascia una recensione su Google
+                    </a>
+                </div>
+
+            </div>
+
+            <nav aria-label="Pagine del sito" class="pb-8 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-0 text-sm">
+                <a href="/Menu" class="inline-block py-2 hover:text-white transition-colors">Menu: colazioni, pranzi e drink</a>
+                <a href="/Cosa-fare-a-bergamo" class="inline-block py-2 hover:text-white transition-colors">Eventi e Spritz Party</a>
+                <a href="/smart-working-bergamo" class="inline-block py-2 hover:text-white transition-colors">Studiare e lavorare a Bergamo</a>
+                <a href="/About" class="inline-block py-2 hover:text-white transition-colors">Chi siamo</a>
+            </nav>
+
+            <div
+                class="pt-8 border-t border-stone-900 text-center flex flex-col md:flex-row justify-between items-center text-xs text-stone-400">
+                <p>© 2026 Start Up Cafè · Bergamo</p>
+                <div class="flex gap-6 mt-2 md:mt-0">
+                    <a href="/privacy" class="inline-block py-3 hover:text-white transition-colors">Privacy</a>
+                    <button type="button" onclick="openCookieSettings()" class="inline-block py-3 hover:text-white transition-colors">Cookie</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra fissa su mobile: Chiama e Indicazioni -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 bg-white border-t border-stone-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <a href="tel:+393474243702" data-track="click_chiama"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-white bg-[#822621]">
+            <i data-lucide="phone" width="20" height="20"></i>
+            Chiama
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-stone-900">
+            <i data-lucide="navigation" width="20" height="20"></i>
+            Indicazioni
+        </a>
+    </div>
+
+    <script>
+
+        // Mobile Menu Toggle logic
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            document.querySelector('[aria-controls=\"mobile-menu\"]').setAttribute('aria-expanded', isMenuOpen);
+            const iconMenu = document.getElementById('icon-menu');
+            const iconClose = document.getElementById('icon-close');
+            
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                if (iconMenu) iconMenu.classList.add('hidden');
+                if (iconClose) iconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                if (iconMenu) iconMenu.classList.remove('hidden');
+                if (iconClose) iconClose.classList.add('hidden');
+            }
+        }
+
+        // Tab Switching Logic
+        function switchTab(category) {
+            // Update Buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn px-8 py-3 rounded-full text-sm font-bold tracking-wider transition-all duration-300 bg-white text-gray-600 hover:bg-gray-200 flex items-center justify-center gap-2 whitespace-nowrap";
+            });
+            const activeBtn = document.getElementById('tab-' + category);
+            if (activeBtn) {
+                activeBtn.className = "tab-btn px-8 py-3 rounded-full text-sm font-bold tracking-wider transition-all duration-300 bg-black text-white shadow-lg scale-105 flex items-center justify-center gap-2 whitespace-nowrap";
+            }
+            // Update Content
+            document.querySelectorAll('.menu-content').forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('grid'); // Remove grid when hidden to prevent layout issues
+            });
+            const activeContent = document.getElementById('content-' + category);
+            activeContent.classList.remove('hidden');
+            activeContent.classList.add('grid');
+        }
+
+        // Accordion Logic for Mobile Drinks Menu
+        function toggleCategory(header) {
+            // Only active on mobile (< 768px)
+            if (window.innerWidth >= 768) return;
+
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('i');
+
+            // Toggle visibility of the content list
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+
+</html>

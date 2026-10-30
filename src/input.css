@@ -1,0 +1,81 @@
+/* Sorgente del CSS: si compila in assets/css/style.css con "npm run build:css" */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
+    src: url('/assets/fonts/inter-latin-var.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/assets/fonts/OpenSauceOne-Black.woff') format('woff');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 20s linear infinite;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Base resets if Tailwind serves fails to load, though we expect it to work */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for Reviews Carousel */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Hide global scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

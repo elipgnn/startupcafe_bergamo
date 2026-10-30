@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi siamo | Start Up Cafè Bergamo, davanti alla Tiraboschi</title>
+    <meta name="description" content="Si studia, si gioca, si brinda: il bar davanti alla Biblioteca Tiraboschi a Bergamo. Giochi da tavolo, book crossing, veg e pet friendly. Passa a trovarci!">
+    <link rel="canonical" href="https://startupcafebergamo.it/About">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Start Up Cafè">
+    <meta property="og:title" content="Chi siamo | Start Up Cafè Bergamo, davanti alla Tiraboschi">
+    <meta property="og:description" content="Si studia, si gioca, si brinda: il bar davanti alla Biblioteca Tiraboschi a Bergamo. Giochi da tavolo, book crossing, veg e pet friendly. Passa a trovarci!">
+    <meta property="og:url" content="https://startupcafebergamo.it/About">
+    <meta property="og:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Il bancone di Start Up Cafè a Bergamo con il logo del locale">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chi siamo | Start Up Cafè Bergamo, davanti alla Tiraboschi">
+    <meta name="twitter:description" content="Si studia, si gioca, si brinda: il bar davanti alla Biblioteca Tiraboschi a Bergamo. Giochi da tavolo, book crossing, veg e pet friendly. Passa a trovarci!">
+    <meta name="twitter:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#822621">
+    <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/icons.js" defer></script>
+    <script src="/assets/js/site.js" defer></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start Up Cafè",
+      "item": "https://startupcafebergamo.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Chi siamo",
+      "item": "https://startupcafebergamo.it/About"
+    }
+  ]
+}
+    </script>
+</head>
+
+<body class="pb-14 md:pb-0 text-pretty font-sans text-gray-900 bg-stone-50 selection:bg-[#822621] selection:text-white overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed w-full z-50 bg-white shadow-sm h-20 transition-all duration-500 ease-in-out">
+        <div class="container mx-auto px-6 h-full flex justify-end items-center relative">
+
+            <!-- Centered Linked Title -->
+            <a href="/"
+                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-opensauce font-black tracking-[-0.03em] uppercase text-3xl text-stone-900 hover:text-[#822621] transition-colors whitespace-nowrap">
+                Start Up Cafè
+            </a>
+
+            <!-- Burger Menu Button (Visible Always) -->
+            <div class="flex items-center">
+                <button type="button" class="text-stone-900 hover:text-[#822621] transition-colors p-3 -mr-3" onclick="toggleMenu()" aria-label="Apri il menu di navigazione" aria-expanded="false" aria-controls="mobile-menu">
+                    <i id="icon-menu" data-lucide="menu" width="28" height="28"></i>
+                    <i id="icon-close" data-lucide="x" width="28" height="28" class="hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile/Full Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 py-8 px-6 flex-col items-center space-y-6 shadow-xl z-40">
+            <a href="/Menu" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Menù</a>
+            <a href="/Cosa-fare-a-bergamo" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Eventi</a>
+            <a href="#footer-contacts"
+                class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Prenotazione</a>
+            <a href="/About" class="text-2xl font-bold uppercase tracking-widest text-[#822621]" onclick="toggleMenu()">Chi
+                Siamo</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-8 md:pt-32 md:pb-16 bg-white text-center px-6">
+        <span class="text-[#822621] font-bold uppercase tracking-widest mb-4 block text-lg">La nostra storia</span>
+        <h1 class="text-4xl md:text-6xl font-bold text-stone-900 mb-4">Chi siamo</h1>
+
+        <div class="text-stone-600 text-lg max-w-3xl mx-auto font-medium leading-relaxed space-y-4">
+            <p>
+                Start Up Cafè è il bar di Via San Bernardino 67/a, a Bergamo.
+                Proprio di fronte alla Biblioteca Tiraboschi. Sì, quella dove hai passato metà della sessione.
+            </p>
+            <p>
+                Perché proprio qui? Perché chi studia ha bisogno di un caffè fatto bene, di una presa libera
+                e di un posto dove staccare la testa. Noi ci occupiamo di tutte e tre le cose. Gli esami, quelli, sono affar tuo.
+            </p>
+        </div>
+    </header>
+
+    <!-- Info Section -->
+    <section class="py-12 md:py-20 bg-stone-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
+
+                <div class="relative h-64 md:h-auto md:min-h-[24rem] overflow-hidden rounded-2xl shadow-xl">
+                    <img src="/assets/bancone-bar-1200.webp" srcset="/assets/bancone-bar-640.webp 640w, /assets/bancone-bar-1200.webp 1200w" sizes="(min-width: 768px) 480px, 100vw" width="1200" height="896" alt="Bancone e bottigliera di Start Up Cafè in Via San Bernardino a Bergamo"
+                        class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                        loading="lazy" />
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold text-stone-900 mb-6">Uno spazio ibrido: si studia, si gioca, si brinda</h2>
+                    <p class="text-stone-600 mb-4 leading-normal">
+                        <strong class="text-stone-900">Si studia.</strong> Wi-Fi, prese elettriche e tavoli dalle 7 del mattino.
+                        Colazione, pranzo e, se serve, un altro caffè. Lo spazio è pensato per studiare e lavorare, quindi puoi sistemarti con portatile e appunti senza sensi di colpa. Sai dove trovarci.
+                        Ecco come funziona lo <a href="/smart-working-bergamo" class="text-[#822621] underline font-bold">smart working a Bergamo da noi</a>.
+                    </p>
+                    <p class="text-stone-600 mb-4 leading-normal">
+                        <strong class="text-stone-900">Si gioca.</strong> Scacchi, Scarabeo, carte: prendi, gioca, rimetti a posto.
+                        C'è anche il book crossing: prendi un libro, se vuoi lasciane un altro. Scegli un gioco, trova qualcuno con cui sfidarti e dimentica per un'ora quanto manca all'esame.
+                    </p>
+                    <p class="text-stone-600 mb-8 leading-normal">
+                        <strong class="text-stone-900">Si brinda.</strong> Aperitivi con taglieri, cocktail e, ogni mercoledì dalle 18:30 alle 22:30,
+                        lo <a href="/Cosa-fare-a-bergamo" class="text-[#822621] underline font-bold">Spritz Party con lo Spritz a 3,50 €</a>.
+                        Dopo una giornata sui libri, un brindisi con gli amici è la ricompensa che ti sei meritato.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-[#822621]/10 p-3 rounded-full text-[#822621]"><i data-lucide="wifi" width="20"
+                                    height="20"></i></div>
+                            <span class="font-bold text-stone-800">Wi-Fi e prese</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-[#822621]/10 p-3 rounded-full text-[#822621]"><i data-lucide="coffee" width="20"
+                                    height="20"></i></div>
+                            <span class="font-bold text-stone-800">Specialty coffee</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-[#822621]/10 p-3 rounded-full text-[#822621]"><i data-lucide="dice-5" width="20"
+                                    height="20"></i></div>
+                            <span class="font-bold text-stone-800">Giochi da tavolo</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-[#822621]/10 p-3 rounded-full text-[#822621]"><i data-lucide="book-open" width="20"
+                                    height="20"></i></div>
+                            <span class="font-bold text-stone-800">Book crossing</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Veg e pet friendly -->
+    <section class="py-12 md:py-16 bg-stone-900 text-white relative z-20">
+        <div class="container mx-auto px-6 max-w-5xl grid md:grid-cols-2 gap-8 md:gap-12">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <i data-lucide="leaf" class="text-white shrink-0" width="32" height="32"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold">Veg friendly, per davvero</h2>
+                </div>
+                <p class="text-stone-400 leading-normal">
+                    Opzioni vegetariane e vegane a pranzo e all'aperitivo, anche nel tagliere.
+                    Piacciono pure ai carnivori. Non diciamo niente a nessuno.
+                    Sfoglia il <a href="/Menu" class="text-white underline font-bold">menu con colazioni, pranzi e drink</a>.
+                </p>
+            </div>
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <i data-lucide="heart" class="text-white shrink-0" width="32" height="32"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold">Pet friendly</h2>
+                </div>
+                <p class="text-stone-400 leading-normal">
+                    Il tuo cane è il benvenuto. E quando c'è il sole ci sono anche i tavoli all'aperto.
+                    Probabilmente si comporta meglio del tuo compagno di gruppo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-12 md:py-16 bg-white relative z-20">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-8 md:mb-20">
+                <span class="text-[#822621] font-bold uppercase tracking-widest text-sm">Il Team</span>
+                <h2 class="text-4xl font-bold mt-2 text-stone-900">I volti di Start Up Cafè</h2>
+                <p class="text-stone-500 mt-4 max-w-2xl mx-auto">
+                    Passione, sorriso e professionalità. Ecco chi si prende cura dei vostri momenti di pausa ogni
+                    giorno.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 lg:gap-12">
+
+                <!-- Simone -->
+                <!-- TODO: confermare che Simone sia il titolare e aggiungere una sua frase (me la devi indicare tu). -->
+                <div class="group text-center">
+                    <div
+                        class="relative w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden border-4 border-stone-100 shadow hover:shadow-xl group-hover:border-brand transition-all duration-300 transform group-hover:-translate-y-1">
+                        <img src="/assets/team-simone.webp" width="512" height="512" alt="Simone, titolare di Start Up Cafè"
+                            class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-2">Simone</h3>
+                    <span class="text-[#822621] font-bold uppercase tracking-widest text-xs block mb-4">OWNER & APERITIVO
+                        MASTER</span>
+                    <p class="text-balance text-stone-500 leading-normal px-4">
+                        Gentilezza e divertimento sono il suo marchio di fabbrica. Ti accoglie col sorriso e ti
+                        conquista con aperitivi che non dimenticherai. Con Simone, il buon umore è garantito.
+                    </p>
+                </div>
+
+                <!-- Cristina -->
+                <div class="group text-center">
+                    <div
+                        class="relative w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden border-4 border-stone-100 shadow hover:shadow-xl group-hover:border-brand transition-all duration-300 transform group-hover:-translate-y-1">
+                        <img src="/assets/team-cristina.webp" width="512" height="512" alt="Ritratto illustrato di Cristina, barista del mattino di Start Up Cafè"
+                            class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-2">Cristina</h3>
+                    <span class="text-[#822621] font-bold uppercase tracking-widest text-xs block mb-4">MORNING COFFEE &
+                        SMILES</span>
+                    <p class="text-balance text-stone-500 leading-normal px-4">
+                        La nostra energia del mattino. Con la sua solarità trasforma ogni colazione in un momento
+                        speciale, facendoti sentire coccolato come a casa tua.
+                    </p>
+                </div>
+
+                <!-- Daniela -->
+                <div class="group text-center">
+                    <div
+                        class="relative w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden border-4 border-stone-100 shadow hover:shadow-xl group-hover:border-brand transition-all duration-300 transform group-hover:-translate-y-1">
+                        <img src="/assets/team-daniela.webp" width="512" height="512" alt="Ritratto illustrato di Daniela, barista del pomeriggio di Start Up Cafè"
+                            class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110"
+                            loading="lazy" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-2">Daniela</h3>
+                    <span class="text-[#822621] font-bold uppercase tracking-widest text-xs block mb-4">AFTERNOON
+                        BARISTA</span>
+                    <p class="text-balance text-stone-500 leading-normal px-4">
+                        L'esperta del pomeriggio. Hai un dubbio su cosa ordinare? Affidati a lei: trova sempre qualcosa
+                        che ti sorprenderà e renderà perfetta la tua pausa.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="py-12 md:py-16 bg-stone-50 relative z-20">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-4">Passa a trovarci</h2>
+            <p class="text-stone-600 text-lg mb-8">Via San Bernardino 67/a, Bergamo. Di fronte alla Tiraboschi, non puoi sbagliare.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/Menu" class="inline-flex items-center gap-2 bg-[#822621] text-white px-8 py-3 rounded-full font-bold hover:bg-stone-900 shadow transition-all duration-300">
+                    <i data-lucide="coffee" width="20" height="20"></i> Guarda il menu
+                </a>
+                <a href="/Cosa-fare-a-bergamo" class="inline-flex items-center gap-2 bg-white text-stone-900 border border-stone-300 px-8 py-3 rounded-full font-bold hover:bg-stone-900 hover:text-white transition-all duration-300">
+                    <i data-lucide="calendar" width="20" height="20"></i> Eventi e Spritz Party
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni" class="inline-flex items-center gap-2 bg-white text-stone-900 border border-stone-300 px-8 py-3 rounded-full font-bold hover:bg-stone-900 hover:text-white transition-all duration-300">
+                    <i data-lucide="navigation" width="20" height="20"></i> Indicazioni
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="py-4 bg-[#822621] overflow-hidden whitespace-nowrap relative z-20">
+        <div class="inline-block animate-marquee">
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Start Up Cafè •
+                Bergamo</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Specialty Coffee •
+                Coworking</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Healthy Brunch • Good
+                Vibes</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Start Up Cafè •
+                Bergamo</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Specialty Coffee •
+                Coworking</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Healthy Brunch • Good
+                Vibes</span>
+        </div>
+    </div>
+
+    <!-- Dove siamo: indirizzo, telefono e orari sono nel footer -->
+    <section id="dove-siamo" class="py-12 md:py-16 bg-stone-100 relative z-20 scroll-mt-20">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-8">
+                <span class="text-[#822621] font-bold uppercase tracking-widest mb-4 block text-lg">Dove siamo</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-stone-900">Davanti alla Biblioteca Tiraboschi</h2>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo"
+                    target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+                    class="inline-flex items-center gap-2 bg-[#822621] text-white px-8 py-3 rounded-full font-bold hover:bg-stone-900 shadow transition-all duration-300">
+                    <i data-lucide="navigation" width="20" height="20"></i>
+                    Indicazioni
+                </a>
+            </div>
+            <div class="h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
+                <iframe title="Mappa: Start Up Cafè in Via San Bernardino 67/a a Bergamo"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5574.364104617971!2d9.660201176207453!3d45.68731841852434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781512ba4fc5591%3A0x86d99ebeef7402e9!2sSTART%20UP%20CAF%C3%88!5e0!3m2!1sit!2sit!4v1766769627214!5m2!1sit!2sit"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- TODO: link "Indicazioni" generico verso Google Maps: sostituirlo con il link diretto alla scheda se preferisci.
+         TODO: numero WhatsApp uguale al telefono, da confermare.
+         TODO: orari presi da Google Business Profile, da confermare (il vecchio sito diceva lun-ven 7:00-20:00). -->
+    <footer id="footer-contacts"
+        class="bg-stone-950 text-stone-400 py-10 md:py-16 border-t border-stone-900 scroll-mt-20 relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-12 mb-10 md:mb-16">
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-6 text-white">
+                        <span class="font-bold text-2xl tracking-widest">START UP CAFÈ</span>
+                    </div>
+                    <p class="text-stone-400 leading-normal mb-6">
+                        Il bar di quartiere a Bergamo, tra università e biblioteca: siamo di fronte alla Biblioteca Tiraboschi.
+                        Vieni a trovarci per un caffè, una partita a scacchi o un aperitivo in compagnia.
+                    </p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="https://www.instagram.com/startupcafe.bergamo/" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/instagram-svgrepo-com.svg" alt="Instagram di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                        <a href="https://www.facebook.com/barstartupcaffe" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/facebook-svgrepo-com.svg" alt="Facebook di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <h2 class="text-white font-bold uppercase tracking-widest mb-6 text-sm">Contatti & Orari</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="map-pin" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Via San Bernardino 67/a</p>
+                                <p class="text-sm">24122 Bergamo (BG)</p>
+                                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni" class="inline-block py-2 text-sm text-white underline hover:text-stone-300">Indicazioni stradali</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="phone" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <a href="tel:+393474243702" data-track="click_chiama" class="inline-block py-2 text-white font-medium hover:text-stone-300">+39 347 424 3702</a>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4 mb-8">
+                            <i data-lucide="clock" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Orari di apertura</p>
+                                <p class="text-sm">Lun, mar, gio, ven: 7:00 - 20:30</p>
+                                <p class="text-sm">Mercoledì: 7:00 - 22:30</p>
+                                <p class="text-sm">Sabato: 7:00 - 14:00</p>
+                                <p class="text-sm">Domenica: chiuso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 bg-stone-900 p-8 rounded-2xl text-center md:text-left">
+                    <h2 class="text-white font-bold text-xl mb-4">Prenota il tuo tavolo</h2>
+                    <p class="text-stone-400 text-sm mb-6">
+                        Vuoi organizzare una serata giochi o assicurarti un posto per studiare?
+                    </p>
+                    <div class="space-y-3">
+                        <a href="tel:+393474243702" data-track="click_chiama"
+                            class="w-full bg-[#822621] text-white py-4 rounded-xl font-bold hover:bg-[#822621]/90 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="phone" width="20" height="20"></i>
+                            Chiama ora :)
+                        </a>
+                        <a href="https://wa.me/393474243702?text=Ciao%20Start%20Up%20Caf%C3%A8%21%20Vorrei%20prenotare%20un%20tavolo%20per%20...%20persone%2C%20il%20giorno%20...%20alle%20ore%20..." target="_blank" rel="noopener noreferrer" data-track="click_whatsapp"
+                            class="w-full bg-white text-stone-900 py-4 rounded-xl font-bold hover:bg-stone-200 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" width="20" height="20"></i>
+                            Prenota su WhatsApp
+                        </a>
+                    </div>
+                    <a href="https://g.page/r/CekCdO--ntmGEBM/review" target="_blank" rel="noopener noreferrer" data-track="click_recensione"
+                        class="inline-flex items-center gap-2 py-2 text-sm text-white underline hover:text-stone-300 mt-4">
+                        <i data-lucide="star" width="16" height="16"></i>
+                        Lascia una recensione su Google
+                    </a>
+                </div>
+
+            </div>
+
+            <nav aria-label="Pagine del sito" class="pb-8 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-0 text-sm">
+                <a href="/Menu" class="inline-block py-2 hover:text-white transition-colors">Menu: colazioni, pranzi e drink</a>
+                <a href="/Cosa-fare-a-bergamo" class="inline-block py-2 hover:text-white transition-colors">Eventi e Spritz Party</a>
+                <a href="/smart-working-bergamo" class="inline-block py-2 hover:text-white transition-colors">Studiare e lavorare a Bergamo</a>
+                <a href="/About" class="inline-block py-2 hover:text-white transition-colors">Chi siamo</a>
+            </nav>
+
+            <div
+                class="pt-8 border-t border-stone-900 text-center flex flex-col md:flex-row justify-between items-center text-xs text-stone-400">
+                <p>© 2026 Start Up Cafè · Bergamo</p>
+                <div class="flex gap-6 mt-2 md:mt-0">
+                    <a href="/privacy" class="inline-block py-3 hover:text-white transition-colors">Privacy</a>
+                    <button type="button" onclick="openCookieSettings()" class="inline-block py-3 hover:text-white transition-colors">Cookie</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra fissa su mobile: Chiama e Indicazioni -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 bg-white border-t border-stone-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <a href="tel:+393474243702" data-track="click_chiama"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-white bg-[#822621]">
+            <i data-lucide="phone" width="20" height="20"></i>
+            Chiama
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-stone-900">
+            <i data-lucide="navigation" width="20" height="20"></i>
+            Indicazioni
+        </a>
+    </div>
+
+    <script>
+
+        // Mobile Menu Toggle logic
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            document.querySelector('[aria-controls=\"mobile-menu\"]').setAttribute('aria-expanded', isMenuOpen);
+            const iconMenu = document.getElementById('icon-menu');
+            const iconClose = document.getElementById('icon-close');
+            
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                if (iconMenu) iconMenu.classList.add('hidden');
+                if (iconClose) iconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                if (iconMenu) iconMenu.classList.remove('hidden');
+                if (iconClose) iconClose.classList.add('hidden');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

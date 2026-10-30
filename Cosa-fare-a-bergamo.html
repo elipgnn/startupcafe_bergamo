@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventi e Spritz Party a Bergamo | Start Up Cafè</title>
+    <meta name="description" content="Ogni mercoledì Spritz Party a 3,50 € dalle 18:30 alle 22:30 in Via San Bernardino 67/a. Scopri le serate a tema, il DJ set e il beer pong.">
+    <link rel="canonical" href="https://startupcafebergamo.it/Cosa-fare-a-bergamo">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Start Up Cafè">
+    <meta property="og:title" content="Eventi e Spritz Party a Bergamo | Start Up Cafè">
+    <meta property="og:description" content="Ogni mercoledì Spritz Party a 3,50 € dalle 18:30 alle 22:30 in Via San Bernardino 67/a. Scopri le serate a tema, il DJ set e il beer pong.">
+    <meta property="og:url" content="https://startupcafebergamo.it/Cosa-fare-a-bergamo">
+    <meta property="og:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Il bancone di Start Up Cafè a Bergamo con il logo del locale">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eventi e Spritz Party a Bergamo | Start Up Cafè">
+    <meta name="twitter:description" content="Ogni mercoledì Spritz Party a 3,50 € dalle 18:30 alle 22:30 in Via San Bernardino 67/a. Scopri le serate a tema, il DJ set e il beer pong.">
+    <meta name="twitter:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <meta property="og:title" content="Eventi e Spritz Party a Bergamo | Start Up Cafè">
+    <meta property="og:description" content="Ogni mercoledì Spritz Party a 3,50 € dalle 18:30 alle 22:30 in Via San Bernardino 67/a. Scopri le serate a tema, il DJ set e il beer pong.">
+    <meta property="og:url" content="https://startupcafebergamo.it/Cosa-fare-a-bergamo">
+    <meta property="og:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Il bancone di Start Up Cafè a Bergamo con il logo del locale">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eventi e Spritz Party a Bergamo | Start Up Cafè">
+    <meta name="twitter:description" content="Ogni mercoledì Spritz Party a 3,50 € dalle 18:30 alle 22:30 in Via San Bernardino 67/a. Scopri le serate a tema, il DJ set e il beer pong.">
+    <meta name="twitter:image" content="https://startupcafebergamo.it/assets/og-image.jpg">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#822621">
+    <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/icons.js" defer></script>
+    <script src="/assets/js/site.js" defer></script>
+    <script src="/assets/js/eventi.js" defer></script>
+
+    <style>
+        /* Event card hover animation */
+        .event-card {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .event-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px -15px rgba(130, 38, 33, 0.15);
+        }
+
+        /* Stagger for cards */
+        .event-card {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: cardFadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .event-card:nth-child(1) { animation-delay: 0.1s; }
+        .event-card:nth-child(2) { animation-delay: 0.2s; }
+        .event-card:nth-child(3) { animation-delay: 0.3s; }
+        .event-card:nth-child(4) { animation-delay: 0.4s; }
+        .event-card:nth-child(5) { animation-delay: 0.5s; }
+        .event-card:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes cardFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start Up Cafè",
+      "item": "https://startupcafebergamo.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Eventi",
+      "item": "https://startupcafebergamo.it/Cosa-fare-a-bergamo"
+    }
+  ]
+}
+    </script>
+</head>
+
+<body class="pb-14 md:pb-0 text-pretty font-sans text-gray-900 bg-stone-50 selection:bg-[#822621] selection:text-white overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed w-full z-50 bg-white shadow-sm h-20 transition-all duration-500 ease-in-out">
+        <div class="container mx-auto px-6 h-full flex justify-end items-center relative">
+
+            <!-- Centered Linked Title -->
+            <a href="/"
+                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-opensauce font-black tracking-[-0.03em] uppercase text-3xl text-stone-900 hover:text-[#822621] transition-colors whitespace-nowrap">
+                Start Up Cafè
+            </a>
+
+            <!-- Burger Menu Button (Visible Always) -->
+            <div class="flex items-center">
+                <button type="button" class="text-stone-900 hover:text-[#822621] transition-colors p-3 -mr-3" onclick="toggleMenu()" aria-label="Apri il menu di navigazione" aria-expanded="false" aria-controls="mobile-menu">
+                    <i id="icon-menu" data-lucide="menu" width="28" height="28"></i>
+                    <i id="icon-close" data-lucide="x" width="28" height="28" class="hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile/Full Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 py-8 px-6 flex-col items-center space-y-6 shadow-xl z-40">
+            <a href="/Menu" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Menù</a>
+            <a href="/Cosa-fare-a-bergamo" class="text-2xl font-bold uppercase tracking-widest text-[#822621]"
+                onclick="toggleMenu()">Eventi</a>
+            <a href="#footer-contacts"
+                class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Prenotazione</a>
+            <a href="/About" class="text-2xl font-bold uppercase tracking-widest text-gray-900 hover:text-[#822621]"
+                onclick="toggleMenu()">Chi Siamo</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-8 md:pt-32 md:pb-16 bg-white text-center px-6">
+        <span class="text-[#822621] font-bold uppercase tracking-widest mb-4 block text-lg">Cosa fare a Bergamo stasera?</span>
+        <h1 class="text-4xl md:text-6xl font-bold text-stone-900 mb-4">
+            Eventi e Spritz Party a Bergamo
+        </h1>
+        <p class="text-balance text-stone-500 text-lg max-w-3xl mx-auto font-medium leading-relaxed">
+            Ogni mercoledì dalle 18:30 alle 22:30 c'è lo <strong>Spritz Party</strong> in Via San Bernardino 67/a,
+            di fronte alla Biblioteca Tiraboschi: Spritz a 3,50 €, musica e serate a tema.
+        </p>
+    </header>
+
+    <!-- Events Section -->
+    <section id="prossimi-eventi" class="py-12 md:py-16 bg-stone-50 scroll-mt-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+
+            <!-- Prossimi Eventi Label -->
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-[#822621]/10 p-2 rounded-full text-[#822621]">
+                    <i data-lucide="calendar" width="24" height="24"></i>
+                </div>
+                <p class="text-2xl font-bold text-stone-900">Prossimi eventi</p>
+                <div class="flex-1 h-px bg-stone-200 ml-4"></div>
+            </div>
+
+            <!-- Elenco eventi: generato da /assets/js/eventi.js in base alla data (fuso Europe/Rome) -->
+            <div id="lista-eventi" class="space-y-8 md:space-y-10"></div>
+
+            <!-- Blocco fisso: visibile quando non c'è nessun evento programmato -->
+            <div id="spritz-fisso" class="bg-[#822621] text-white rounded-2xl p-8 md:p-12 shadow-2xl text-center">
+                <span class="font-bold uppercase tracking-widest mb-3 block text-sm md:text-base">Ogni mercoledì</span>
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">Spritz Party</h2>
+                <p class="text-lg md:text-xl font-medium mb-8">18:30 - 22:30 · Spritz 3,50 €</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo"
+                        target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+                        class="inline-flex items-center gap-2 bg-white text-stone-900 px-6 py-3 rounded-full font-bold hover:bg-stone-900 hover:text-white transition-colors">
+                        <i data-lucide="navigation" width="18" height="18"></i>Indicazioni
+                    </a>
+                    <a href="tel:+393474243702" data-track="click_chiama"
+                        class="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-stone-900 transition-colors">
+                        <i data-lucide="phone" width="18" height="18"></i>Chiama
+                    </a>
+                </div>
+                <p class="text-xs mt-6">Bevi responsabilmente.</p>
+            </div>
+
+            <div class="text-center mt-12 md:mt-16">
+                <div class="bg-stone-900 text-white rounded-2xl p-8 md:p-12 border border-stone-800 shadow-2xl relative overflow-hidden">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <i data-lucide="bell-ring" class="text-white" width="28" height="28"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-3">Non perderti i prossimi eventi!</h2>
+                    <p class="text-stone-400 mb-6 max-w-xl mx-auto">
+                        Seguici su Instagram per restare aggiornato su tutte le nostre iniziative, serate speciali e novità del menù.
+                    </p>
+                    <a href="https://www.instagram.com/startupcafe.bergamo/" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 bg-[#822621] text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-stone-900 transition-colors duration-300 shadow-md">
+                        <i data-lucide="instagram" width="20" height="20"></i>
+                        Seguici su Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foto delle serate -->
+    <section id="foto-serate" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-8">
+                <span class="text-[#822621] font-bold uppercase tracking-widest mb-3 block text-lg">Dalle serate</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Com'è uno Spritz Party da Start Up Cafè</h2>
+            </div>
+            <div class="flex flex-wrap justify-center items-start gap-x-4 gap-y-6 md:gap-x-10 md:gap-y-12 py-8">
+                <img src="/assets/spritz-party-amici-con-drink.webp" alt="Due amici con un drink in mano allo Spritz Party di Start Up Cafè a Bergamo" width="800" height="1071" loading="lazy" class="object-cover rounded-[2.5rem] shadow-2xl hover:rotate-0 transition-transform duration-500 w-[44%] md:w-[27%] aspect-[3/4] -rotate-3">
+                <img src="/assets/spritz-party-dj-set.webp" alt="DJ al lavoro con il portatile durante lo Spritz Party da Start Up Cafè" width="800" height="1071" loading="lazy" class="object-cover rounded-[2.5rem] shadow-2xl hover:rotate-0 transition-transform duration-500 w-[44%] md:w-[27%] aspect-[3/4] rotate-2 mt-10 md:mt-14">
+                <img src="/assets/spritz-party-cuore-con-le-mani.webp" alt="Due ragazzi fanno un cuore con le mani davanti a Start Up Cafè durante lo Spritz Party" width="800" height="1067" loading="lazy" class="object-cover rounded-[2.5rem] shadow-2xl hover:rotate-0 transition-transform duration-500 w-[44%] md:w-[27%] aspect-[3/4] rotate-3 md:-mt-4">
+                <img src="/assets/spritz-party-beer-pong.webp" alt="Tavolo del beer pong con i bicchieri disposti a triangolo allo Spritz Party" width="800" height="1067" loading="lazy" class="object-cover rounded-[2.5rem] shadow-2xl hover:rotate-0 transition-transform duration-500 w-[44%] md:w-[27%] aspect-[3/4] -rotate-2 mt-2 md:mt-6">
+                <img src="/assets/spritz-party-gruppo-al-bancone.webp" alt="Gruppo di amici al bancone di Start Up Cafè che brindano allo Spritz Party" width="1000" height="750" loading="lazy" class="object-cover rounded-[2.5rem] shadow-2xl hover:rotate-0 transition-transform duration-500 w-[86%] md:w-[44%] aspect-[4/3] rotate-2 md:-mt-2">
+            </div>
+            <p class="text-center text-stone-500 mt-8">
+                Vuoi esserci? Guarda il <a href="/Menu" class="text-[#822621] underline font-bold">menu di cocktail e taglieri</a>
+                oppure <a href="/About" class="text-[#822621] underline font-bold">scopri chi siamo</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="py-4 bg-[#822621] overflow-hidden whitespace-nowrap relative z-20">
+        <div class="inline-block animate-marquee">
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Start Up Cafè •
+                Bergamo</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Specialty Coffee •
+                Coworking</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Healthy Brunch • Good
+                Vibes</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Start Up Cafè •
+                Bergamo</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Specialty Coffee •
+                Coworking</span>
+            <span class="text-white font-bold text-2xl mx-8 uppercase tracking-widest">Healthy Brunch • Good
+                Vibes</span>
+        </div>
+    </div>
+
+    <!-- Dove siamo: indirizzo, telefono e orari sono nel footer -->
+    <section id="dove-siamo" class="py-12 md:py-16 bg-stone-100 relative z-20 scroll-mt-20">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-8">
+                <span class="text-[#822621] font-bold uppercase tracking-widest mb-4 block text-lg">Dove siamo</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-stone-900">Davanti alla Biblioteca Tiraboschi</h2>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo"
+                    target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+                    class="inline-flex items-center gap-2 bg-[#822621] text-white px-8 py-3 rounded-full font-bold hover:bg-stone-900 shadow transition-all duration-300">
+                    <i data-lucide="navigation" width="20" height="20"></i>
+                    Indicazioni
+                </a>
+            </div>
+            <div class="h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
+                <iframe title="Mappa: Start Up Cafè in Via San Bernardino 67/a a Bergamo"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5574.364104617971!2d9.660201176207453!3d45.68731841852434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781512ba4fc5591%3A0x86d99ebeef7402e9!2sSTART%20UP%20CAF%C3%88!5e0!3m2!1sit!2sit!4v1766769627214!5m2!1sit!2sit"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- TODO: link "Indicazioni" generico verso Google Maps: sostituirlo con il link diretto alla scheda se preferisci.
+         TODO: numero WhatsApp uguale al telefono, da confermare.
+         TODO: orari presi da Google Business Profile, da confermare (il vecchio sito diceva lun-ven 7:00-20:00). -->
+    <footer id="footer-contacts"
+        class="bg-stone-950 text-stone-400 py-10 md:py-16 border-t border-stone-900 scroll-mt-20 relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-12 mb-10 md:mb-16">
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-6 text-white">
+                        <span class="font-bold text-2xl tracking-widest">START UP CAFÈ</span>
+                    </div>
+                    <p class="text-stone-400 leading-normal mb-6">
+                        Il bar di quartiere a Bergamo, tra università e biblioteca: siamo di fronte alla Biblioteca Tiraboschi.
+                        Vieni a trovarci per un caffè, una partita a scacchi o un aperitivo in compagnia.
+                    </p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="https://www.instagram.com/startupcafe.bergamo/" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/instagram-svgrepo-com.svg" alt="Instagram di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                        <a href="https://www.facebook.com/barstartupcaffe" target="_blank" rel="noopener noreferrer"
+                            class="bg-white/10 p-3 rounded-full hover:bg-stone-800 transition-colors">
+                            <img src="/assets/facebook-svgrepo-com.svg" alt="Facebook di Start Up Cafè" width="20" height="20" class="w-5 h-5" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <h2 class="text-white font-bold uppercase tracking-widest mb-6 text-sm">Contatti & Orari</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="map-pin" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Via San Bernardino 67/a</p>
+                                <p class="text-sm">24122 Bergamo (BG)</p>
+                                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni" class="inline-block py-2 text-sm text-white underline hover:text-stone-300">Indicazioni stradali</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4">
+                            <i data-lucide="phone" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <a href="tel:+393474243702" data-track="click_chiama" class="inline-block py-2 text-white font-medium hover:text-stone-300">+39 347 424 3702</a>
+                        </div>
+                        <div class="flex items-start justify-center md:justify-start gap-4 mb-8">
+                            <i data-lucide="clock" class="text-[#822621] mt-1 hidden md:block" width="20" height="20"></i>
+                            <div>
+                                <p class="text-white font-medium">Orari di apertura</p>
+                                <p class="text-sm">Lun, mar, gio, ven: 7:00 - 20:30</p>
+                                <p class="text-sm">Mercoledì: 7:00 - 22:30</p>
+                                <p class="text-sm">Sabato: 7:00 - 14:00</p>
+                                <p class="text-sm">Domenica: chiuso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 bg-stone-900 p-8 rounded-2xl text-center md:text-left">
+                    <h2 class="text-white font-bold text-xl mb-4">Prenota il tuo tavolo</h2>
+                    <p class="text-stone-400 text-sm mb-6">
+                        Vuoi organizzare una serata giochi o assicurarti un posto per studiare?
+                    </p>
+                    <div class="space-y-3">
+                        <a href="tel:+393474243702" data-track="click_chiama"
+                            class="w-full bg-[#822621] text-white py-4 rounded-xl font-bold hover:bg-[#822621]/90 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="phone" width="20" height="20"></i>
+                            Chiama ora :)
+                        </a>
+                        <a href="https://wa.me/393474243702?text=Ciao%20Start%20Up%20Caf%C3%A8%21%20Vorrei%20prenotare%20un%20tavolo%20per%20...%20persone%2C%20il%20giorno%20...%20alle%20ore%20..." target="_blank" rel="noopener noreferrer" data-track="click_whatsapp"
+                            class="w-full bg-white text-stone-900 py-4 rounded-xl font-bold hover:bg-stone-200 transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" width="20" height="20"></i>
+                            Prenota su WhatsApp
+                        </a>
+                    </div>
+                    <a href="https://g.page/r/CekCdO--ntmGEBM/review" target="_blank" rel="noopener noreferrer" data-track="click_recensione"
+                        class="inline-flex items-center gap-2 py-2 text-sm text-white underline hover:text-stone-300 mt-4">
+                        <i data-lucide="star" width="16" height="16"></i>
+                        Lascia una recensione su Google
+                    </a>
+                </div>
+
+            </div>
+
+            <nav aria-label="Pagine del sito" class="pb-8 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-0 text-sm">
+                <a href="/Menu" class="inline-block py-2 hover:text-white transition-colors">Menu: colazioni, pranzi e drink</a>
+                <a href="/Cosa-fare-a-bergamo" class="inline-block py-2 hover:text-white transition-colors">Eventi e Spritz Party</a>
+                <a href="/smart-working-bergamo" class="inline-block py-2 hover:text-white transition-colors">Studiare e lavorare a Bergamo</a>
+                <a href="/About" class="inline-block py-2 hover:text-white transition-colors">Chi siamo</a>
+            </nav>
+
+            <div
+                class="pt-8 border-t border-stone-900 text-center flex flex-col md:flex-row justify-between items-center text-xs text-stone-400">
+                <p>© 2026 Start Up Cafè · Bergamo</p>
+                <div class="flex gap-6 mt-2 md:mt-0">
+                    <a href="/privacy" class="inline-block py-3 hover:text-white transition-colors">Privacy</a>
+                    <button type="button" onclick="openCookieSettings()" class="inline-block py-3 hover:text-white transition-colors">Cookie</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra fissa su mobile: Chiama e Indicazioni -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 bg-white border-t border-stone-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <a href="tel:+393474243702" data-track="click_chiama"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-white bg-[#822621]">
+            <i data-lucide="phone" width="20" height="20"></i>
+            Chiama
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Start+Up+Caf%C3%A8%2C+Via+San+Bernardino+67%2Fa%2C+24122+Bergamo" target="_blank" rel="noopener noreferrer" data-track="click_indicazioni"
+            class="flex items-center justify-center gap-2 py-4 font-bold text-stone-900">
+            <i data-lucide="navigation" width="20" height="20"></i>
+            Indicazioni
+        </a>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm hidden items-center justify-center p-4 md:p-8">
+        <button type="button" onclick="closeLightbox()" aria-label="Chiudi" class="absolute top-6 right-6 text-white hover:text-[#822621] transition-colors z-[110]">
+            <i data-lucide="x" width="40" height="40"></i>
+        </button>
+        <div class="max-w-full max-h-full flex items-center justify-center w-full h-full" onclick="closeLightbox()">
+            <img id="lightbox-img" alt="Locandina dell'evento ingrandita" class="max-w-full max-h-[90vh] object-contain shadow-2xl rounded-lg duration-300" onclick="event.stopPropagation()">
+        </div>
+    </div>
+
+    <script>
+
+        // Mobile Menu Toggle logic
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            document.querySelector('[aria-controls=\"mobile-menu\"]').setAttribute('aria-expanded', isMenuOpen);
+            const iconMenu = document.getElementById('icon-menu');
+            const iconClose = document.getElementById('icon-close');
+            
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                if (iconMenu) iconMenu.classList.add('hidden');
+                if (iconClose) iconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                if (iconMenu) iconMenu.classList.remove('hidden');
+                if (iconClose) iconClose.classList.add('hidden');
+            }
+        }
+
+        // Lightbox Logic
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = ''; // Restore scroll
+        }
+
+        // Close lightbox on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>
